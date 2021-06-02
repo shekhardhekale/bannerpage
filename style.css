@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.logo2{
+	height: 65px;
+	width: 100px;
+}
+.logo3{
+	font-style: italic;
+
+}
+.logo1{
+	font-weight: 600;
+	font-size: 35px;
+	
+}
+
+#header{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+}
+.navbar{
+	padding: 50px 0;
+}
+.navbar-dark .navbar-brand{
+	color: #dcdde1;
+}
+.nav-item{
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+	background: #dcdde1;
+	color: #262626;
+}
+.main{
+	position: relative;
+	background: url('img/img5.jpg');
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	padding: 220px 0 200px;
+}
+
+.main h2{
+	margin: 0;
+	padding: 0;
+	font-size: 2.6em;
+	color: #dcdde1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.main p{
+	margin-top: 1em;
+	padding: 0;
+	font-size: 1em;
+	color: #dcdde1;
+}
+
+.main .btn{
+	background: #718093;
+	color: #fff;
+	border-radius: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+@media(max-width:768px){
+	.main{
+		padding: 200px 0;
+	}
+
+	.main h2{
+		font-size: 2em
+	}
+}
+
+
+
+@import url('pick a font');
+body {
+	/*font: normal 1em 'font';*/
+	background-color: #ecfab6;
+}
+
+main {
+	margin-top: 4.5em;
+}
+#section1 {
+	height: 45em;
+}
+
+
+
+/* Carousel cards */
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.row-equal.carousel-inner>.active, 
+.row-equal.carousel-inner>.next, 
+.row-equal.carousel-inner>.prev {
+    display: flex;
+}
+
+.row-equal.carousel-inner .next        { left:  33%; }
+.row-equal.carousel-inner .prev        { left: -33%; }
+
+.carousel,
+.carousel-inner,
+.carousel-inner > .item {
+    overflow: hidden;
+}
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+
+
+
+
+/* using a container causes multiple alerts to stack. */
+.alerts-container {
+	position: fixed;
+	top: 1em;
+	right: 2em;
+	z-index: 9999;
+}
+.alert {
+	position: relative;
+	min-width: 15em;
+	text-align: center;
+	display: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.2);
+}
+
